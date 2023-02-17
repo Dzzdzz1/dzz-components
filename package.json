@@ -1,0 +1,53 @@
+{
+  "name": "dzz-components",
+  "version": "1.0.0",
+  "description": "vue组件库",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name dzz-components --dest lib packages/index.js"
+  },
+  "author": "dzz",
+  "private": false,
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.4.3",
+    "element-ui": "^2.14.1",
+    "less": "^4.0.0",
+    "less-loader": "^7.2.1",
+    "vue": "^2.6.10",
+    "vuedraggable": "^2.24.3",
+    "xe-utils": "^3.1.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "publishConfig": {
+    "registry": "http://172.20.30.31:8084/repository/npm-local/"
+  }
+}
